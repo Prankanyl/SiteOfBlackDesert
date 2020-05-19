@@ -3,29 +3,88 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SiteOfBlackDesert</title>
+    <title>SiteOfBlackDesert</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">SiteOfBlackDesert</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">BlackDesert</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            База знаний
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Предметы</a>
+                            <a class="dropdown-item" href="#">Комплекты предметов</a>
+                            <a class="dropdown-item" href="#">Задания</a>
+                            <a class="dropdown-item" href="#">Задания гильдии</a>
+                            <a class="dropdown-item" href="#">НПЦ</a>
+                            <a class="dropdown-item" href="#">Умения</a>
+                            <a class="dropdown-item" href="#">Магазин жемчужин</a>
+                            <a class="dropdown-item" href="#">Дома</a>
+                            <a class="dropdown-item" href="#">Знания</a>
+                            <a class="dropdown-item" href="#">Ремесло</a>
+                            <a class="dropdown-item" href="#">Достижения</a>
+                            <a class="dropdown-item" href="#">Титулы</a>
+                            <a class="dropdown-item" href="#">Питомцы</a>
+                            <a class="dropdown-item" href="#">Ездовые питомцы</a>
+                            <a class="dropdown-item" href="#">Сбор</a>
+                            <a class="dropdown-item" href="#">Огород</a>
+                            <a class="dropdown-item" href="#">Рыбная энциклопедия</a>
+                            <a class="dropdown-item" href="#">Узлы</a>
+                            <a class="dropdown-item" href="#">Шаблоны размещения предметов</a>
+                            <a class="dropdown-item" href="#">Торговые товары</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Алхимия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" ">Кулинария</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Инструменты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Калькулятор умений</a>
+                            <a class="dropdown-item" href="#">Популярные комбинации умений</a>
+                            <a class="dropdown-item" href="#">Примерочная</a>
+                            <a class="dropdown-item" href="#">Карта</a>
+                            <a class="dropdown-item" href="#">Калькулятор снаряжения</a>
+                            <a class="dropdown-item" href="#">Тймер мировых босов</a>
+                            <a class="dropdown-item" href="#">Всплывающие подсказки</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Общение
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Форум</a>
+                            <a class="dropdown-item" href="#">Комментарии</a>
+                            <a class="dropdown-item" href="#">Контакты</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+                </form>
+                <a class="nav-link" href="#">
+                    Вход
+                </a>
+                <a class="nav-link" href="#">
+                    Регистрация
+                </a>
             </div>
         </nav>
     </header>
@@ -37,7 +96,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - SiteOfBlackDesert - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2020 - BlackDesert - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
