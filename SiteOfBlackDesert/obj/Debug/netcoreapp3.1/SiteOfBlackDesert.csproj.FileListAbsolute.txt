@@ -63,3 +63,4 @@ C:/Users/Паша/Desktop/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcorea
 /Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/SiteOfBlackDesert.csproj.CopyComplete
 /Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/SiteOfBlackDesert.dll
 /Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/SiteOfBlackDesert.pdb
+/Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/sign_in_or_sign_out.cshtml.g.cs
