@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SiteOfBlackDesert.Data.Interfaces
 {
-    interface IAllItems
+    public interface IAllItems
     {
         IEnumerable<Items> GetSetAllItems { get; }
         IEnumerable<Items> GetSetFavItems { get; set; }

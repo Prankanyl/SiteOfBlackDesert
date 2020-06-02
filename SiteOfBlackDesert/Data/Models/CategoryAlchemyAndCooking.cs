@@ -4,11 +4,11 @@ using System.Text;
 
 namespace SiteOfBlackDesert.Data.Models
 {
-    public class CategoryItems
+    public class CategoryAlchemyAndCooking
     {
         public int id { set; get; }
-        public string categoryitemsname { set; get; }
+        public string name { set; get; }
         public string descriptions { set; get; }
-        public List<Items> items { set; get; }
+        public List<AlchemyAndCooking> items { set; get; }
     }
 }

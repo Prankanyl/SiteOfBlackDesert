@@ -2,11 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace SiteOfBlackDesert.Data.Interfaces
 {
-    public interface ICategoryItems
+    public interface ICategoryAlchemyAndCooking
     {
-        IEnumerable<CategoryItems> AllCategories { get;  }
+        IEnumerable<CategoryAlchemyAndCooking> AllCategoriesAlchemyAndCooking { get; }
     }
 }
