@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SiteOfBlackDesert.Data.Interfaces;
+using SiteOfBlackDesert.Data.Mocks;
 
 namespace SiteOfBlackDesert
 {
@@ -23,6 +25,8 @@ namespace SiteOfBlackDesert
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IAllItems, MockItems>();
+            services.AddTransient<ICategoryItems, MockCategoty>();
             services.AddRazorPages();
             //services.AddMvc();
         }
@@ -30,9 +34,11 @@ namespace SiteOfBlackDesert
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //app.UseDeveloperExceptionPage();
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseAuthorization();
             app.UseStatusCodePages();
-            //app.UseStaticFiles();
             //app.UseMvcWithDefaultRoute();
             if (env.IsDevelopment())
             {
@@ -45,12 +51,6 @@ namespace SiteOfBlackDesert
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
