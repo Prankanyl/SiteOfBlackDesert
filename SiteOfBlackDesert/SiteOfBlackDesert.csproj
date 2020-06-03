@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <Content Remove="Views\Items\Index.razor" />
-    <Content Remove="Pages\ListItemsPage.cshtml" />
     <Content Remove="Pages\sign_in_or_sign_out.cshtml" />
   </ItemGroup>
   <ItemGroup>
