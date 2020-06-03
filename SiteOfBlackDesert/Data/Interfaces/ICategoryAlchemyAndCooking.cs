@@ -6,6 +6,6 @@ namespace SiteOfBlackDesert.Data.Interfaces
 {
     public interface ICategoryAlchemyAndCooking
     {
-        IEnumerable<CategoryAlchemyAndCooking> AllCategoriesAlchemyAndCooking { get; }
+        public IEnumerable<CategoryAlchemyAndCooking> AllCategoriesAlchemyAndCooking { get; }
     }
 }

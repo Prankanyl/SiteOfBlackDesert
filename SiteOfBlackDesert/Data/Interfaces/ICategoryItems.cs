@@ -7,6 +7,6 @@ namespace SiteOfBlackDesert.Data.Interfaces
 {
     public interface ICategoryItems
     {
-        IEnumerable<CategoryItems> AllCategories { get;  }
+        public IEnumerable<CategoryItems> AllCategories { get;  }
     }
 }

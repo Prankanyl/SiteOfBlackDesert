@@ -6,7 +6,7 @@ using SiteOfBlackDesert.Data.Models;
 
 namespace SiteOfBlackDesert.Data.Mocks
 {
-    class MockCategoty : ICategoryItems 
+    public class MockCategoty : ICategoryItems 
     {
         public IEnumerable<CategoryItems> AllCategories
         {

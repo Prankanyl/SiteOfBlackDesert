@@ -7,9 +7,9 @@ using System.Text;
 
 namespace SiteOfBlackDesert.Data.Mocks
 {
-    class MockItems: IAllItems
+    public class MockItems: IAllItems
     {
-        private readonly ICategoryItems _CategoryItems = new MockCategoty();
+        public readonly ICategoryItems _CategoryItems = new MockCategoty();
         public CategoryItems GetIndexCategiryItems(int index)
         {
             int count = 0;

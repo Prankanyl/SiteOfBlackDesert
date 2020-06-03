@@ -1,1 +1,14 @@
-﻿
+﻿@page
+@using SiteOfBlackDesert.Data.Models
+@using SiteOfBlackDesert.Data.Mocks
+@model IEnumerable<Items>
+@{
+    ViewData["Title"] = "Items";
+}
+<h3></h3>
+@{
+    foreach (var item in Model)
+    {
+        <p>@item.name</p>
+    }
+}

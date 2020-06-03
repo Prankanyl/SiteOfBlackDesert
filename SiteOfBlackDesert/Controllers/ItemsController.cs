@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SiteOfBlackDesert.Controllers
 {
-    class ItemsController : Controller
+    public class ItemsController : Controller
     {
         private readonly IAllItems _allItems;
         private readonly ICategoryItems _allCategories;
@@ -18,6 +18,8 @@ namespace SiteOfBlackDesert.Controllers
         public ViewResult ListItems()
         {
             var items = _allItems.GetSetAllItems;
+            //var items = "hello";
+            //ViewBag.Items = items;
             return View(items);
         }
     }

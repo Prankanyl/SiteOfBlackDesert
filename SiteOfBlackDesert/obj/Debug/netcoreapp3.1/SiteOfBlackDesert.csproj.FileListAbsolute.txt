@@ -87,3 +87,6 @@ C:/Users/Паша/Desktop/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcorea
 C:/Users/Паша/Desktop/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/SiteOfBlackDesert.MvcApplicationPartsAssemblyInfo.cache
 C:/Users/Паша/Desktop/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Views/Items/ListItemsPage.cshtml.g.cs
 /Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/ListItemsPage.cshtml.g.cs
+/Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/Contacts.cshtml.g.cs
+/Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/bin/Debug/netcoreapp3.1/mono_crash.42f6ec106.0.json
+/Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/TimerBoss.cshtml.g.cs

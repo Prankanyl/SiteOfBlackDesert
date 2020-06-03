@@ -7,9 +7,9 @@ namespace SiteOfBlackDesert.Data.Interfaces
 {
     public interface IAllItems
     {
-        IEnumerable<Items> GetSetAllItems { get; }
-        IEnumerable<Items> GetSetFavItems { get; set; }
-        Items getObjectItem(int itemId);
+        public IEnumerable<Items> GetSetAllItems { get; }
+        public IEnumerable<Items> GetSetFavItems { get; set; }
+        public Items getObjectItem(int itemId);
         public CategoryItems GetIndexCategiryItems(int index);
     }
 }

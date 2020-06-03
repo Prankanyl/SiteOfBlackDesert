@@ -6,6 +6,43 @@
     <title>SiteOfBlackDesert</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .countdown-title {
+            color: #000;
+            font-weight: 100;
+            font-size: 72px;
+            margin: 40px 0px 20px;
+        }
+
+        .countdown {
+            font-family: sans-serif;
+            color: #fff;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .countdown-number {
+            padding: 10px;
+            border-radius: 3px;
+            background: #000;
+            display: inline-block;
+        }
+
+        .countdown-time {
+            padding: 15px;
+            border-radius: 3px;
+            background: #FDB60D;
+            display: inline-block;
+        }
+
+        .countdown-text {
+            display: block;
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,32 +60,32 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="ListItemsPage">Предметы</a>
-                            <!--<a class="dropdown-item" href="#">Комплекты предметов</a>
-                            <a class="dropdown-item" href="#">Задания</a>
-                            <a class="dropdown-item" href="#">Задания гильдии</a>
-                            <a class="dropdown-item" href="#">НПЦ</a>
-                            <a class="dropdown-item" href="#">Умения</a>
-                            <a class="dropdown-item" href="#">Магазин жемчужин</a>
-                            <a class="dropdown-item" href="#">Дома</a>
-                            <a class="dropdown-item" href="#">Знания</a>
-                            <a class="dropdown-item" href="#">Ремесло</a>
-                            <a class="dropdown-item" href="#">Достижения</a>
-                            <a class="dropdown-item" href="#">Титулы</a>
-                            <a class="dropdown-item" href="#">Питомцы</a>
-                            <a class="dropdown-item" href="#">Ездовые питомцы</a>
-                            <a class="dropdown-item" href="#">Сбор</a>
-                            <a class="dropdown-item" href="#">Огород</a>
-                            <a class="dropdown-item" href="#">Рыбная энциклопедия</a>
-                            <a class="dropdown-item" href="#">Узлы</a>
-                            <a class="dropdown-item" href="#">Шаблоны размещения предметов</a>
-                            <a class="dropdown-item" href="#">Торговые товары</a>-->
+                            <a class="dropdown-item" href="TimerBoss">Время появления боссов</a>
+                            <!--<a class="dropdown-item" href="#">Задания</a>
+                                <a class="dropdown-item" href="#">Задания гильдии</a>
+                                <a class="dropdown-item" href="#">НПЦ</a>
+                                <a class="dropdown-item" href="#">Умения</a>
+                                <a class="dropdown-item" href="#">Магазин жемчужин</a>
+                                <a class="dropdown-item" href="#">Дома</a>
+                                <a class="dropdown-item" href="#">Знания</a>
+                                <a class="dropdown-item" href="#">Ремесло</a>
+                                <a class="dropdown-item" href="#">Достижения</a>
+                                <a class="dropdown-item" href="#">Титулы</a>
+                                <a class="dropdown-item" href="#">Питомцы</a>
+                                <a class="dropdown-item" href="#">Ездовые питомцы</a>
+                                <a class="dropdown-item" href="#">Сбор</a>
+                                <a class="dropdown-item" href="#">Огород</a>
+                                <a class="dropdown-item" href="#">Рыбная энциклопедия</a>
+                                <a class="dropdown-item" href="#">Узлы</a>
+                                <a class="dropdown-item" href="#">Шаблоны размещения предметов</a>
+                                <a class="dropdown-item" href="#">Торговые товары</a>-->
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Алхимия</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" ">Кулинария</a>
+                        <a class="nav-link" href="#">Кулинария</a>
                     </li>
                     <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -71,7 +108,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://bddatabase.net/forum/">Форум</a>
                             <a class="dropdown-item" href="https://bdotools.xyz/map/">Карта</a>
-                            <a class="dropdown-item" href="#">Контакты</a>
+                            <a class="dropdown-item" href="Contacts">Контакты</a>
                         </div>
                     </li>
                 </ul>
