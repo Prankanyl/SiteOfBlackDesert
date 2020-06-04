@@ -1,0 +1,13 @@
+﻿@page
+@using SiteOfBlackDesert.Data.Models
+@model IEnumerable<AlchemyAndCooking>
+@{
+    ViewData["Title"] = "Alchemy";
+}
+<h3></h3>
+@{
+    foreach (var item in Model)
+    {
+        <p>@item.name</p>
+    }
+}

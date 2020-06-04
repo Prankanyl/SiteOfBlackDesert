@@ -25,10 +25,12 @@ namespace SiteOfBlackDesert
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+            services.AddRazorPages();
             services.AddTransient<IAllItems, MockItems>();
             services.AddTransient<ICategoryItems, MockCategoty>();
-            services.AddRazorPages();
-            //services.AddMvc();
+            services.AddTransient<ICategoryAlchemyAndCooking, MockCategoryAlchemyAndCooking>();
+            services.AddTransient<IAlchemyAndCooking, MockAlchemyAndCooking>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +41,7 @@ namespace SiteOfBlackDesert
             app.UseRouting();
             app.UseAuthorization();
             app.UseStatusCodePages();
+            
             //app.UseMvcWithDefaultRoute();
             if (env.IsDevelopment())
             {

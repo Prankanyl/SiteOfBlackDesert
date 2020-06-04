@@ -14,8 +14,8 @@ namespace SiteOfBlackDesert.Data.Mocks
             {
                 return new List<CategoryAlchemyAndCooking>
                 {
-                    new CategoryAlchemyAndCooking {name="Алхимия", descriptions="Мешать!)"},
                     new CategoryAlchemyAndCooking {name="Кулинария", descriptions="Варить!)"},
+                    new CategoryAlchemyAndCooking {name="Алхимия", descriptions="Мешать!)"},
                 };
             }
         }

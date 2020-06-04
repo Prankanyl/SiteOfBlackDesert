@@ -33,43 +33,43 @@ namespace SiteOfBlackDesert.Data.Mocks
                 {
                     new AlchemyAndCooking
                     {
-                        name = "Ржавый меч",
-                        descriptions="Затупившийся меч, покрытый ржавчиной",
+                        name = "Алоэ",
+                        descriptions="Продукт культивации",
                         img="",
                         CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.First()
                     },
                     new AlchemyAndCooking
                     {
-                        name = "Меч ополченца",
-                        descriptions="Меч массового производства для ополченцев",
+                        name = "Медовуха",
+                        descriptions="Алкогольный напиток",
                         img="",
                         CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.First()
                     },
                     new AlchemyAndCooking
                     {
-                        name = "Лук Кзарки",
-                        descriptions="Лук, в котором таится дьявольская сила Кзарки. Сила злого духа наполняет своим могуществом этот лук",
+                        name = "Бадьян",
+                        descriptions="Продукт культивации",
                         img="",
                         CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.First()
                     },
                     new AlchemyAndCooking
                     {
-                        name = "Щит предела Пэнгочи",
-                        descriptions="Щит Пэнгочи, позволяющий повысить навыки до максимума",
+                        name = "Азалия",
+                        descriptions="Природный материал",
                         img="",
                         CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.Last()
                     },
                     new AlchemyAndCooking
                     {
-                        name = "Стальной кинжал искр",
-                        descriptions="Кинжал, таящий энергию огня",
+                        name = "Алмаз",
+                        descriptions="Обработаный материал для изготовления предметов",
                         img="",
                         CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.Last()
                     },
                     new AlchemyAndCooking
                     {
-                        name = "Доспехи Кайдикт",
-                        descriptions="Душа Кайдикта, великого воина прошлого, заключена в этом предмете, и дарует ему огромную мощь",
+                        name = "Алхимический порошок",
+                        descriptions="Порошок от которго исходит загадочная энергия",
                         img="",
                         CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.Last()
                     },

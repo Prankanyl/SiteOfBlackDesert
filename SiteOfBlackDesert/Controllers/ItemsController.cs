@@ -10,16 +10,15 @@ namespace SiteOfBlackDesert.Controllers
     {
         private readonly IAllItems _allItems;
         private readonly ICategoryItems _allCategories;
+
         public ItemsController(IAllItems iallItems, ICategoryItems iItemsCategories)
         {
             _allItems = iallItems;
             _allCategories = iItemsCategories;
         }
-        public ViewResult ListItems()
+        public ViewResult ListItemsPage()
         {
             var items = _allItems.GetSetAllItems;
-            //var items = "hello";
-            //ViewBag.Items = items;
             return View(items);
         }
     }

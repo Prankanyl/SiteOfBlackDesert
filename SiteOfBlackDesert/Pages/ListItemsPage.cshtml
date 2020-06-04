@@ -1,6 +1,5 @@
 ﻿@page
 @using SiteOfBlackDesert.Data.Models
-@using SiteOfBlackDesert.Data.Mocks
 @model IEnumerable<Items>
 @{
     ViewData["Title"] = "Items";
@@ -9,6 +8,6 @@
 @{
     foreach (var item in Model)
     {
-        <p>@item.name</p>
+
     }
 }

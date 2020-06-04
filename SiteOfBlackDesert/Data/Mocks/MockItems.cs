@@ -9,7 +9,7 @@ namespace SiteOfBlackDesert.Data.Mocks
 {
     public class MockItems: IAllItems
     {
-        public readonly ICategoryItems _CategoryItems = new MockCategoty();
+        private readonly ICategoryItems _CategoryItems = new MockCategoty();
         public CategoryItems GetIndexCategiryItems(int index)
         {
             int count = 0;

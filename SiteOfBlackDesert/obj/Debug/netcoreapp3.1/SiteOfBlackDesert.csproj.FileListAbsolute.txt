@@ -90,3 +90,5 @@ C:/Users/Паша/Desktop/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcorea
 /Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/Contacts.cshtml.g.cs
 /Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/bin/Debug/netcoreapp3.1/mono_crash.42f6ec106.0.json
 /Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/TimerBoss.cshtml.g.cs
+/Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/Alchemy.cshtml.g.cs
+/Users/Valera/Projects/SiteOfBlackDesert/SiteOfBlackDesert/obj/Debug/netcoreapp3.1/Razor/Pages/Cooking.cshtml.g.cs
