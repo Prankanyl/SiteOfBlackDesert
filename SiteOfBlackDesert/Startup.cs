@@ -10,11 +10,21 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SiteOfBlackDesert.Data.Interfaces;
 using SiteOfBlackDesert.Data.Mocks;
+using IHostingEnvironment = Microsoft.Extensions.Hosting.IHostingEnvironment;
+using SiteOfBlackDesert.Data;
+using Microsoft.EntityFrameworkCore;
+using SiteOfBlackDesert.Data.Repository;
 
 namespace SiteOfBlackDesert
 {
     public class Startup
     {
+        private IConfigurationRoot _confSting;
+
+        public Startup(IHostingEnvironment hostEnv) 
+        {
+            _confSting = new ConfigurationBuilder().SetBasePath(hostEnv.ContentRootPath).AddJsonFile("dbsettings.json").Build();
+        }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,12 +35,13 @@ namespace SiteOfBlackDesert
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confSting.GetConnectionString("DefaultConnection")));
             services.AddMvc();
             services.AddRazorPages();
-            services.AddTransient<IAllItems, MockItems>();
-            services.AddTransient<ICategoryItems, MockCategoty>();
-            services.AddTransient<ICategoryAlchemyAndCooking, MockCategoryAlchemyAndCooking>();
-            services.AddTransient<IAlchemyAndCooking, MockAlchemyAndCooking>();
+            services.AddTransient<IAllItems, ItemsRepository>();
+            services.AddTransient<ICategoryItems, CategoryItemsRepository>();
+            services.AddTransient<ICategoryAlchemyAndCooking, CategoryAlchemyAndCookingRepository>();
+            services.AddTransient<IAlchemyAndCooking, AlchemyAndCookingRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

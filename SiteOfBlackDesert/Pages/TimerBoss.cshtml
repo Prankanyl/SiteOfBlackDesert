@@ -2,219 +2,217 @@
 @{
     ViewData["Title"] = "Timer";
 }
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr>
-                <div style="text-align: center">
-                    <h1 class="countdown-title"><b>Таймер Боссов</b></h1>
-                    <div id="countdown" class="countdown">
-                        <div class="countdown-number">
-                            <span class="hours countdown-time"></span>
-                            <span class="countdown-text">Hours</span>
-                        </div>
-                        <div class="countdown-number">
-                            <span class="minutes countdown-time"></span>
-                            <span class="countdown-text">Minutes</span>
-                        </div>
-                        <div class="countdown-number">
-                            <span class="seconds countdown-time"></span>
-                            <span class="countdown-text">Seconds</span>
-                        </div>
+<div class="container-fluid" style="background-color: #ffffff;">
+    <div class="row">
+        <div class="col-lg-12">
+            <div style="text-align: center">
+                <h1 class="countdown-title"><b>Таймер Боссов</b></h1>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-number">
+                        <span class="hours countdown-time"></span>
+                        <span class="countdown-text">Hours</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="minutes countdown-time"></span>
+                        <span class="countdown-text">Minutes</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="seconds countdown-time"></span>
+                        <span class="countdown-text">Seconds</span>
                     </div>
                 </div>
-                <hr>
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th class="bg-warning">Время</th>
-                            <th class="bg-warning">Понедельник</th>
-                            <th class="bg-warning">Вторник</th>
-                            <th class="bg-warning">Среда</th>
-                            <th class="bg-warning">Четверг</th>
-                            <th class="bg-warning">Пятница</th>
-                            <th class="bg-warning">Суббота</th>
-                            <th class="bg-warning">Воскресенье</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="table-active">00:00</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Камос</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">01:00</td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">08:00</td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Каранда</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">10:00</td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active"></td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Древний Кутум</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">12:00</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active"></td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Камос</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">14:00</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Камос</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">16:00</td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">18:00</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active"></td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Камос</td>
-                        </tr>
-                        <tr>
-                            <td class="table-active">23:00</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Продажный правитель Кзарка</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Нубэр</td>
-                            <td class="table-active">Каранда</td>
-                            <td class="table-active">Древний Кутум</td>
-                            <td class="table-active">Камос</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
+            <hr>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="bg-warning">Время</th>
+                        <th class="bg-warning">Понедельник</th>
+                        <th class="bg-warning">Вторник</th>
+                        <th class="bg-warning">Среда</th>
+                        <th class="bg-warning">Четверг</th>
+                        <th class="bg-warning">Пятница</th>
+                        <th class="bg-warning">Суббота</th>
+                        <th class="bg-warning">Воскресенье</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-active">00:00</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Камос</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">01:00</td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">08:00</td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Каранда</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">10:00</td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active"></td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Древний Кутум</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">12:00</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active"></td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Камос</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">14:00</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Камос</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">16:00</td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">18:00</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active"></td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Камос</td>
+                    </tr>
+                    <tr>
+                        <td class="table-active">23:00</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Продажный правитель Кзарка</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Нубэр</td>
+                        <td class="table-active">Каранда</td>
+                        <td class="table-active">Древний Кутум</td>
+                        <td class="table-active">Камос</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <hr>
     </div>
-    <script>function getTimeRemaining(endtime) {
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var seconds = Math.floor((t / 1000) % 60);
-        var minutes = Math.floor((t / 1000 / 60) % 60);
-        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        //var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        return {
-            'total': t,
-            //'days': days,
-            'hours': hours,
-            'minutes': minutes,
-            'seconds': seconds
-        };
-    }
+</div>
+<script>function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    //var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+        'total': t,
+        //'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+    };
+}
 
-    function initializeClock(id, endtime) {
-        var clock = document.getElementById(id);
-        var hoursSpan = clock.querySelector('.hours');
-        var minutesSpan = clock.querySelector('.minutes');
-        var secondsSpan = clock.querySelector('.seconds');
+function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
 
-        function updateClock() {
-            var t = getTimeRemaining(endtime);
+    function updateClock() {
+        var t = getTimeRemaining(endtime);
 
-            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-            if (t.total <= 0) {
-                var deadline;
-                var today = new Date();
-                var nowHours = today.getHours();
-                today.setMinutes(60);
-                today.setSeconds(60);
-                today.setMilliseconds(1000);
-                clearInterval(timeinterval);
-                if (nowHours >= 0 && nowHours < 1) {
-                    today.setHours(1);
-                    deadline = today;
-                }
-                else if (nowHours >= 1 && nowHours < 8) {
-                    today.setHours(8);
-                    deadline = today;
-                }
-                else if (nowHours >= 8 && nowHours < 10) {
-                    today.setHours(10);
-                    deadline = today;
-                }
-                else if (nowHours >= 10 && nowHours < 12) {
-                    today.setHours(12);
-                    deadline = today;
-                }
-                else if (nowHours >= 12 && nowHours < 14) {
-                    today.setHours(14);
-                    deadline = today;
-                }
-                else if (nowHours >= 14 && nowHours < 16) {
-                    today.setHours(16);
-                    deadline = today;
-                }
-                else if (nowHours >= 16 && nowHours < 18) {
-                    today.setHours(18);
-                    deadline = today;
-                }
-                else if (nowHours >= 18 && nowHours < 23) {
-                    today.setHours(23);
-                    deadline = today;
-                }
-                else {
-                    today.setDate(new Date() + 24);
-                    today.setHours(0);
-                    deadline = today;
-                }
-                initializeClock('countdown', deadline);
+        if (t.total <= 0) {
+            var deadline;
+            var today = new Date();
+            var nowHours = today.getHours();
+            today.setMinutes(60);
+            today.setSeconds(60);
+            today.setMilliseconds(1000);
+            clearInterval(timeinterval);
+            if (nowHours >= 0 && nowHours < 1) {
+                today.setHours(1);
+                deadline = today;
             }
+            else if (nowHours >= 1 && nowHours < 8) {
+                today.setHours(8);
+                deadline = today;
+            }
+            else if (nowHours >= 8 && nowHours < 10) {
+                today.setHours(10);
+                deadline = today;
+            }
+            else if (nowHours >= 10 && nowHours < 12) {
+                today.setHours(12);
+                deadline = today;
+            }
+            else if (nowHours >= 12 && nowHours < 14) {
+                today.setHours(14);
+                deadline = today;
+            }
+            else if (nowHours >= 14 && nowHours < 16) {
+                today.setHours(16);
+                deadline = today;
+            }
+            else if (nowHours >= 16 && nowHours < 18) {
+                today.setHours(18);
+                deadline = today;
+            }
+            else if (nowHours >= 18 && nowHours < 23) {
+                today.setHours(23);
+                deadline = today;
+            }
+            else {
+                today.setDate(new Date() + 24);
+                today.setHours(0);
+                deadline = today;
+            }
+            initializeClock('countdown', deadline);
         }
-
-        updateClock();
-        var timeinterval = setInterval(updateClock, 1000);
     }
 
-        var deadline = new Date(Date.parse(new Date()) + 1 * 1 * 1 * 1); // for endless timer 10 * 
-        initializeClock('countdown', deadline);
-    </script>
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+}
+
+    var deadline = new Date(Date.parse(new Date()) + 1 * 1 * 1 * 1); // for endless timer 10 * 
+    initializeClock('countdown', deadline);
+</script>

@@ -5,24 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\**" />
+    <Content Remove="Views\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Views\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Items\" />
-  </ItemGroup>
-
 
 
   <ItemGroup>
-    <Content Remove="Views\Items\Index.razor" />
     <Content Remove="Pages\sign_in_or_sign_out.cshtml" />
     <Content Remove="Pages\Contacts.razor" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Views\Items\ListItemsPage.cshtml.cs" />
   </ItemGroup>
 </Project>

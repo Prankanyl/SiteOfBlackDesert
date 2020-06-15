@@ -9,6 +9,5 @@ namespace SiteOfBlackDesert.Data.Interfaces
     {
         IEnumerable<AlchemyAndCooking> GetSetAllAlchemyAndCooking { get; }
         AlchemyAndCooking getObjectAlchemyAndCooking(int itemId);
-        public CategoryAlchemyAndCooking GetIndexCategiryAlchemyAndCooking(int index);
     }
 }
