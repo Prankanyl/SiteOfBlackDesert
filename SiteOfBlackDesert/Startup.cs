@@ -14,6 +14,7 @@ using IHostingEnvironment = Microsoft.Extensions.Hosting.IHostingEnvironment;
 using SiteOfBlackDesert.Data;
 using Microsoft.EntityFrameworkCore;
 using SiteOfBlackDesert.Data.Repository;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace SiteOfBlackDesert
 {

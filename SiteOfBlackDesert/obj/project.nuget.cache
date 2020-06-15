@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3RzzYuKAAfA02zljQwm3Tw23UYrxdYeKmBfVaeheLyyjCQz45qVVSfG+jY71BOxn3wjOPGJCY6wQmvZ1WeQZRw==",
+  "dgSpecHash": "/2jpzj1M+wDP1q3VX5yu+BYP8wTYPuDNJi/N0AAl7pMRWG+2Cj/I5mHzhwBQxTCEGfQUgRWWlc1/GmzkdWuZDg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Паша\\Desktop\\SiteOfBlackDesert\\SiteOfBlackDesert\\SiteOfBlackDesert.csproj",
   "expectedPackageFiles": [
@@ -24,8 +24,10 @@
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.5\\microsoft.entityframeworkcore.3.1.5.nupkg.sha512",
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.5\\microsoft.entityframeworkcore.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.5\\microsoft.entityframeworkcore.analyzers.3.1.5.nupkg.sha512",
+    "C:\\Users\\Паша\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.5\\microsoft.entityframeworkcore.design.3.1.5.nupkg.sha512",
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.5\\microsoft.entityframeworkcore.relational.3.1.5.nupkg.sha512",
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.5\\microsoft.entityframeworkcore.sqlserver.3.1.5.nupkg.sha512",
+    "C:\\Users\\Паша\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.5\\microsoft.entityframeworkcore.tools.3.1.5.nupkg.sha512",
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.5\\microsoft.extensions.caching.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.5\\microsoft.extensions.caching.memory.3.1.5.nupkg.sha512",
     "C:\\Users\\Паша\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.5\\microsoft.extensions.configuration.3.1.5.nupkg.sha512",
