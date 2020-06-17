@@ -8,6 +8,7 @@ namespace SiteOfBlackDesert.Data.Models
     {
         public int id { set; get; }
         public string name { set; get; }
+        public string category { set; get; }
         public string descriptions { set; get; }
         public string img { set; get; }
         public int CategoryAlchemyAndCookingID { set; get; }

@@ -16,11 +16,5 @@ namespace SiteOfBlackDesert.Controllers
             _allAlchemyAndCooking = iallAlchemyAndCooking;
             _allCategoriesAlchemyAndCooking = iallCategoriesAlchemyAndCooking;
         }
-
-        public ViewResult AlchemyAndCooking()
-        {
-            var items = _allAlchemyAndCooking.GetSetAllAlchemyAndCooking;
-            return View(items);
-        }
     }
 }

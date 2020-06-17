@@ -17,11 +17,5 @@ namespace SiteOfBlackDesert.Controllers
             _allItems = iallItems;
             _allCategories = iItemsCategories;
         }
-        public ViewResult ListItemsPage()
-        {
-            var items = _allItems.GetSetAllItems;
-            ViewBag.Items = items;
-            return View();
-        }
     }
 }

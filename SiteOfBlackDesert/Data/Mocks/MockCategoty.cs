@@ -8,7 +8,7 @@ namespace SiteOfBlackDesert.Data.Mocks
 {
     public class MockCategoty : ICategoryItems 
     {
-        public IEnumerable<CategoryItems> AllCategories
+        public static IEnumerable<CategoryItems> AllCategories
         {
             get 
             {

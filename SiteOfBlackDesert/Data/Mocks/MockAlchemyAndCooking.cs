@@ -9,23 +9,7 @@ namespace SiteOfBlackDesert.Data.Mocks
 {
     public class MockAlchemyAndCooking : IAlchemyAndCooking
     {
-        private readonly ICategoryAlchemyAndCooking _CategoryAlchemyAndCooking = new MockCategoryAlchemyAndCooking();
-        public CategoryAlchemyAndCooking GetIndexCategiryAlchemyAndCooking(int index)
-        {
-            int count = 0;
-
-            foreach (CategoryAlchemyAndCooking item in _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking)
-            {
-                if (index == count)
-                {
-                    return (item);
-                }
-                count += 1;
-            }
-            CategoryAlchemyAndCooking LastElement = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.Last();
-            return (LastElement);
-        }
-        public IEnumerable<AlchemyAndCooking> GetSetAllAlchemyAndCooking
+        public static IEnumerable<AlchemyAndCooking> GetSetAllAlchemyAndCooking
         {
             get
             {
@@ -34,44 +18,44 @@ namespace SiteOfBlackDesert.Data.Mocks
                     new AlchemyAndCooking
                     {
                         name = "Алоэ",
+                        category = "Кулинария",
                         descriptions="Продукт культивации",
-                        img="",
-                        CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.First()
+                        img="/img/00007347.png",
                     },
                     new AlchemyAndCooking
                     {
                         name = "Медовуха",
+                        category = "Кулинария",
                         descriptions="Алкогольный напиток",
-                        img="",
-                        CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.First()
+                        img="/img/00009206.png",
                     },
                     new AlchemyAndCooking
                     {
                         name = "Бадьян",
+                        category = "Кулинария",
                         descriptions="Продукт культивации",
-                        img="",
-                        CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.First()
+                        img="/img/00005402.png",
                     },
                     new AlchemyAndCooking
                     {
                         name = "Азалия",
+                        category = "Алхимия",
                         descriptions="Природный материал",
-                        img="",
-                        CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.Last()
+                        img="/img/00007019.png",
                     },
                     new AlchemyAndCooking
                     {
                         name = "Алмаз",
+                        category = "Алхимия",
                         descriptions="Обработаный материал для изготовления предметов",
-                        img="",
-                        CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.Last()
+                        img="/img/00004463.png",
                     },
                     new AlchemyAndCooking
                     {
                         name = "Алхимический порошок",
+                        category = "Алхимия",
                         descriptions="Порошок от которго исходит загадочная энергия",
-                        img="",
-                        CategoryAlchemyAndCooking = _CategoryAlchemyAndCooking.AllCategoriesAlchemyAndCooking.Last()
+                        img="/img/00004924.png",
                     },
                 };
             }

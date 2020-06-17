@@ -7,7 +7,7 @@ namespace SiteOfBlackDesert.Data.Interfaces
 {
     public interface IAlchemyAndCooking
     {
-        IEnumerable<AlchemyAndCooking> GetSetAllAlchemyAndCooking { get; }
+        static IEnumerable<AlchemyAndCooking> GetSetAllAlchemyAndCooking { get; }
         AlchemyAndCooking getObjectAlchemyAndCooking(int itemId);
     }
 }
