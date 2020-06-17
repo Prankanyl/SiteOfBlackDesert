@@ -5,16 +5,13 @@
     ViewData["Title"] = "Items";
 }
 <style>
-    body {
-        background-color: #ffffff;
-    }
     p {
         color: white;
         text-indent: 0em;
     }
 </style>
-<h3 style="text-align: center;">Самые популярные предметы</h3>
-<div class="container-fluid">
+<div class="container-fluid" style="background-color: #ffffff;">
+    <h3 style="text-align: center;">Самые популярные предметы</h3>
     <div class="row">
         @{
             foreach (var item in MockItems.GetSetAllItems)
@@ -35,21 +32,33 @@
         }
     </div>
 </div>
-<h3 style="text-align: center;">Все предметы</h3>
-<div class="container-fluid">
+<br />
+<style>
+    p {
+        color: black;
+        text-indent: 0em;
+    }
+</style>
+<div class="container-fluid" style="background-color: #8b8b8b">
+    <h3 style="text-align: center;">Все предметы</h3>
     <div class="row">
         @{
             foreach (var item in MockItems.GetSetAllItems)
             {
                 <div class="col-lg-3">
-                    <div class="card" style="width: 18rem; background-color: #8b8b8b">
+                    <div class="card" style="width: 18rem; background-color: #ffffff">
                         <img class="card-img-top" src=@item.img alt="Card image cap">
                         <h5 class="card-title" style="text-align: center; color: white">@item.name</h5>
                         <div class="card-body">
-                            <p class="card-text">@item.descriptions</p>
+                            <p class="card-text">Описание: @item.descriptions</p>
+                            <p class="card-text">Урон: @item.damage</p>
+                            <p class="card-text">Защита: @item.protection</p>
+                            <p class="card-text">Меткость: @item.accuracy</p>
+                            <p class="card-text">Уклонение: @item.evasion</p>
+                            <p class="card-text">Снижение урона: @item.damage_reduction</p>
                         </div>
                     </div>
-                </div>            
+                </div>
             }
         }
     </div>
